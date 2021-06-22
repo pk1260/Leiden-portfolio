@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
+    <meta name="author" content="Pascal Kuiper">
+    <meta name="copyright" content="Pascal Kuiper">
+    <meta name="keywords" content="Portfolio, Media, Design, Services, Pascal Kuiper,">
 
     <title>PK Portfolio</title>
-
+    <!--    Style sheets    -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <!--    Fav icon    -->
+    <link rel="shortcut icon" type="image/png" href="image/logo.svg">
 </head>
 <body>
 <!--    Nav section    -->
+<section class="nav_section">
     <header id="navbar">
         <a class="logo" href="#hero"><img src="image/logo.svg" alt="logo"></a>
         <nav>
@@ -22,8 +29,12 @@
                 <li><a href="#portfolio">Portfolio</a></li>
             </ul>
         </nav>
-        <a href="#contact"><button class="cta">Contact</button></a>
-        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <a href="#contact">
+            <button class="cta">Contact</button>
+        </a>
+        <a onclick="openNav()" class="menu" href="#">
+            <button>Menu</button>
+        </a>
     </header>
     <div id="mobile__menu" class="overlay">
         <a class="close" onclick="closeNav()">&times;</a>
@@ -35,14 +46,38 @@
             <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
     </div>
+</section>
+
 <!--    Hero section    -->
 <section class="hero_section" id="hero">
-    <h2>Hello</h2>
+    <h1 class="hero__h1">I am<br><span class="type"></span></h1>
+    <div id="scroll-wrapper">
+        <div id="scroll-wrapper-inner">
+            <div id="scroll-title">Scroll</div>
+            <div id="scroll-down"></div>
+        </div>
+    </div>
 </section>
 
 <!--    About section    -->
 <section class="about_section" id="about">
-    <h2>About me</h2>
+    <div class="about_container">
+        <div class="about_left"></div>
+        <div class="about_right">
+            <div class="about_content">
+                <h2>About <span>me</span></h2>
+                <h4>Hello! I'm Pascal Kuiper</h4>
+                <p>I'm a fullstack webdeveloper looking to expand his knowledge and network.
+                    Everyday I work to become better at the tools I use. For frontend I am currently working a lot with
+                    HTML5, CSS3, JS and React for school. For backend I mainly work with PHP and SQL, but I am always
+                    looking for new skills to learn.
+                    <br><br>
+                    Outside of school and work I like to learn new languages and Traveling around the world.</p>
+                <p>Read my resume to learn more about me</p>
+                <a href="image/CV-pascal-kuiper-Multi-Lang_ENG.pdf" target="_blank" download>Resume</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!--    Skills section    -->
@@ -66,10 +101,18 @@
 </section>
 
 <!--    Script section    -->
+<!--    Google fonts    -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--    Mobile nav script   -->
 <script type="text/javascript" src="js/mobile.js"></script>
+<!--    Top scroll script    -->
 <script type="text/javascript" src="js/scroll.js"></script>
+<!--    Navbar scroll script    -->
 <script type="text/javascript" src="js/nav-change.js"></script>
+<!--    Typed js script    -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script type="text/javascript" src="js/typing.js"></script>
+
 
 </body>
 </html>
