@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+
+    <title>PK Portfolio</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+<!--    Nav section    -->
+    <header id="navbar">
+        <a class="logo" href="#hero"><img src="image/logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <a href="#contact"><button class="cta">Contact</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+            <a href="#hero" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#skills" onclick="closeNav()">Skills</a>
+            <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+    </div>
+<!--    Hero section    -->
+<section class="hero_section" id="hero">
+    <h2>Hello</h2>
+</section>
+
+<!--    About section    -->
+<section class="about_section" id="about">
+    <h2>About me</h2>
+</section>
+
+<!--    Skills section    -->
+<section class="skills_section" id="skills">
+    <h2>My skillset</h2>
+</section>
+
+<!--    Portfolio section    -->
+<section class="portfolio_section" id="portfolio">
+    <h2>My portfolio</h2>
+</section>
+
+<!--    Contact section    -->
+<section class="contact_section" id="contact">
+
+</section>
+
+<!--    Footer section    -->
+<section class="footer_section" id="footer">
+
+</section>
+
+<!--    Script section    -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/mobile.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/nav-change.js"></script>
+
+</body>
+</html>
