@@ -166,21 +166,6 @@ li, a, button {
     color: var(--main-black);
 }
 
-.about_right a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: var(--rgba-dark-orange);
-    color: var(--main-white);
-    padding: 10px 30px;
-    display: inline-block;
-    letter-spacing: 2px;
-    border-radius: 50px;
-}
-
-.about_right a:hover {
-    background-color: var(--rgba-light-orange);
-}
-
 /* || About Mobile */
 @media only screen and (max-width: 768px) {
     .about_container {
@@ -258,7 +243,17 @@ li, a, button {
     }
 }
 
-/* || Projects Mobile */
+/* || Projects Section */
+.portfolio_h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.portfolio_h2 span {
+    color: var(--main-orange);
+    margin-bottom: 1em;
+}
+
 .portfolio_container {
     display: flex;
     flex-wrap: wrap;
@@ -271,16 +266,17 @@ li, a, button {
 
 .project-card {
     width: 500px;
-    height: 500px;
+    height: 400px;
     background-color: #F0F0F0;
     border-radius: 5px;
     transition: all ease 0.3s;
 }
 
 .card-project-preview {
-    height: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 10px 10px 0 0;
-    background: url("../image/pascal.jpg") no-repeat center / cover;
+    background-color: var(--main-white);
 }
 
 .card-project-content {
@@ -333,4 +329,10 @@ button:hover {
         border-radius: 5px;
         transition: all ease 0.3s;
     }
+
+    .portfolio_h2 {
+        font-size: 2.5em;
+    }
 }
+
+/* || Contact section */
