@@ -53,6 +53,7 @@ button:hover {
 
 #navbar {
     transition: all .3s ease 0s;
+    z-index: 20;
 }
 
 .active_a {
@@ -71,6 +72,7 @@ button:hover {
     .nav__links, .cta {
         display: none;
     }
+
     .menu {
         display: inherit;
     }
@@ -81,7 +83,7 @@ button:hover {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     left: 0;
     top: 0;
     background-color: #24252a;

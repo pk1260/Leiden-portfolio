@@ -34,6 +34,7 @@
     transform: rotate(90deg);
     margin-bottom: 45px;
 }
+
 #scroll-down::before {
     -webkit-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
     -moz-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
@@ -48,6 +49,7 @@
     background: #FFF;
     content: ' ';
 }
+
 @-webkit-keyframes elasticus {
     0% {
         -webkit-transform-origin: 0 0;
@@ -98,6 +100,7 @@
         transform: scale(1, 0);
     }
 }
+
 @-moz-keyframes elasticus {
     0% {
         -webkit-transform-origin: 0 0;
@@ -148,6 +151,7 @@
         transform: scale(1, 0);
     }
 }
+
 @-o-keyframes elasticus {
     0% {
         -webkit-transform-origin: 0 0;
@@ -198,6 +202,7 @@
         transform: scale(1, 0);
     }
 }
+
 @keyframes elasticus {
     0% {
         -webkit-transform-origin: 0 0;
