@@ -104,6 +104,15 @@ li, a, button {
     }
 }
 
+@media only screen and (max-width: 1140px) {
+    .portfolio_section {
+        height: 100%;
+    }
+    .skills_section {
+        height: 50%;
+    }
+}
+
 /* || Hero section */
 .hero__h1 {
     text-transform: uppercase;
@@ -301,7 +310,6 @@ p {
     margin-bottom: 30px;
     font-size: 17px;
     font-weight: 300;
-    line-heigth: 30px;
     color: #A2A2A2;
     letter-spacing: .3px;
     line-height: 30px;
@@ -321,6 +329,17 @@ button {
 
 button:hover {
     transform: translateY(-3px)
+}
+@media only screen and (max-width: 1935px) {
+    .portfolio_container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1455px) {
+    .project-card {
+        width: 300px;
+    }
 }
 
 /* || Projects Mobile */
@@ -371,8 +390,8 @@ button:hover {
     margin: 1em 0;
     padding: 2em 4em;
     outline: none;
-    border: 0px solid;
-    color: var(--main-white);
+    border: 0 solid;
+    color: var(--main-black);
     transition: .5s;
 }
 
