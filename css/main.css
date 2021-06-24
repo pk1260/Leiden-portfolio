@@ -10,9 +10,11 @@
     /* || RGBA styles */
     --rgba-light-orange: rgba(252, 126, 0, .8);
     --rgba-dark-orange: rgba(252, 126, 0, 1);
+    --rgba-trans-white: rgba(0, 0, 0, .4);
 
     /* || Background styles */
     --skill-bg: #EEEEEE;
+    --contact-bg: #111;
 }
 
 /* || General styles */
@@ -75,13 +77,14 @@ li, a, button {
 }
 
 .contact_section {
-    background-image: url("../image/hero-banner.jpg");
+    background-image: url("../image/yasakuni.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0 10%;
 }
@@ -258,6 +261,7 @@ li, a, button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 60%;
 }
 
 .card-container {
@@ -265,8 +269,8 @@ li, a, button {
 }
 
 .project-card {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: auto;
     background-color: #F0F0F0;
     border-radius: 5px;
     transition: all ease 0.3s;
@@ -274,15 +278,14 @@ li, a, button {
 
 .card-project-preview {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: contain;
     border-radius: 10px 10px 0 0;
     background-color: var(--main-white);
 }
 
 .card-project-content {
-    padding-top: 30px;
-    padding-bottom: 15px;
-    padding-left: 30px;
+    padding: 15px 30px;
 }
 
 h4 {
@@ -336,3 +339,88 @@ button:hover {
 }
 
 /* || Contact section */
+.contact_container {
+    background-color: var(--rgba-trans-white);
+    padding: 3em 5em;
+    border-radius: 25px;
+}
+
+.contact_h2 {
+    font-size: 3em;
+    margin-bottom: .5em;
+    text-align: center;
+    color: var(--main-white);
+}
+
+.contact_h2 span {
+    color: var(--main-orange);
+    margin-bottom: 1em;
+}
+
+.contact_form {
+    width: 600px;
+    padding: 0 1em;
+    overflow: hidden;
+}
+
+.contact_form_text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 1em 0;
+    padding: 2em 4em;
+    outline: none;
+    border: 0px solid;
+    color: var(--main-white);
+    transition: .5s;
+}
+
+.contact_form_text:hover {
+    box-shadow: 0 0 .5em 1px var(--main-orange);
+}
+
+textarea.contact_form_text {
+    resize: none;
+    height: 120px;
+}
+
+.contact_from_btn {
+    padding: 1em 4em;
+    background-color: var(--rgba-dark-orange);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    color: var(--main-white);
+}
+
+.contact_from_btn:hover {
+    background-color: var(--rgba-light-orange);
+    transform: translateY(-3px)
+}
+
+/* || Projects Mobile */
+@media only screen and (max-width: 768px) {
+    .contact_form {
+        width: 270px;
+        padding: 0 1em;
+        overflow: hidden;
+    }
+
+    .contact_container {
+        padding: 2em 3em;
+    }
+
+    .contact_h2 {
+        font-size: 2.5em;
+    }
+
+    .contact_from_btn {
+        width: 100%;
+    }
+
+    .contact_form_text {
+        padding: 1em 2em;
+    }
+}
