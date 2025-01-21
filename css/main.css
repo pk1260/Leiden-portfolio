@@ -50,7 +50,7 @@ li, a, button {
 }
 
 .about_section {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -59,7 +59,7 @@ li, a, button {
 
 .skills_section {
     background-color: var(--skill-bg);
-    height: 50vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@ li, a, button {
 }
 
 .portfolio_section {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
